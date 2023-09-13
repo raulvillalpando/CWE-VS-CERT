@@ -51,7 +51,6 @@ Se presenta un error relacionado con la división por cero durante la operación
 
 **Referencias:**
 - [Documento "sei-cert-c-coding-standard-2016-v01"](https://resources.sei.cmu.edu/downloads/secure-coding/assets/sei-cert-c-coding-standard-2016-v01.pdf)
-- [CWE-457](https://cwe.mitre.org/data/definitions)
 - [CWE-457](https://cwe.mitre.org/data/definitions/457.html)
 - [Estándares de CERT](https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards)
 - [CWE-131](https://cwe.mitre.org/data/definitions/131.html)
