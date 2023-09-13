@@ -26,20 +26,20 @@ Para la siguiente sección tomé como base el documento “sei-cert-c-coding-sta
 **Ejemplo 1 - Estándar "EXP33-C":**
 
 Este ejemplo de código no conforme al estándar “EXP33-C” de CERT está relacionado directamente con la CWE-457, que se refiere a la "Uso de datos no inicializados". 
-![imagen "INT32-C](https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg)
+![imagen "INT32-C](https://github.com/raulvillalpando/CWE-VS-CERT/blob/main/image_2023-09-12_201652588.png)
 Aquí, la variable “error_log” se declara, pero no se inicializa antes de que se intente copiar su contenido en la cadena buffer utilizando “sprintf”. Debido a que “error_log” no tiene un valor definido, contiene un valor indeterminado y potencialmente peligroso.
 
 **Ejemplo 2 - Estándar "ARR32-C":**
 
 Este ejemplo de código no conforme al estándar "ARR32-C" de CERT está relacionado directamente con la CWE-131, que se refiere a el “Cálculo incorrecto del tamaño del búfer”. 
-![imagen "INT32-C](https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg)
+![imagen "INT32-C](https://github.com/raulvillalpando/CWE-VS-CERT/blob/1264f7889922623cfb0f67bbff78f41ab7527f82/image_2023-09-12_202034947.png)
 En este código, se declara un "Variable Length Array (VLA)" llamado "vla" cuyo tamaño se basa en el parámetro "size". El estándar "ARR32-C" de CERT establece que se deben usar "rsize_t" o "size_t" para representar el tamaño de un objeto, y el uso de "size" como tamaño de un VLA podría resultar en un cálculo incorrecto del tamaño del búfer.
 
 **Ejemplo 3 - Estándar "INT32-C":**
 
-Este ejemplo de código no conforme al estándar "INT32-C" de CERT está relacionado directamente con la CWE-369, que se refiere a "División entre cero". Se presenta un error relacionado con la división por cero durante la operación de módulo en las variables "s_a" y "s_b". 
-![imagen "INT32-C](https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg)
-El estándar no aborda específicamente la prevención de errores de división por cero. Si "s_b" es igual a 0, la operación de módulo resultaría en una división por cero, lo que es una operación indefinida y podría causar comportamientos impredecibles en el código.
+Este ejemplo de código no conforme al estándar "INT32-C" de CERT está relacionado directamente con la CWE-369, que se refiere a "División entre cero".
+![imagen "INT32-C](https://github.com/raulvillalpando/CWE-VS-CERT/blob/main/image_2023-09-12_202336732.png)
+Se presenta un error relacionado con la división por cero durante la operación de módulo en las variables "s_a" y "s_b". Si "s_b" es igual a 0, la operación de módulo resultaría en una división por cero, lo que es una operación indefinida y podría causar comportamientos impredecibles en el código.
 
 ---
 
